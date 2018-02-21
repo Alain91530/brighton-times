@@ -50,7 +50,7 @@ ul {
 }
 /*
  *
- * Setting up the ontainer to mostly-fluid
+ * Setting up the container to flex
  *
  */
 
@@ -69,17 +69,25 @@ ul {
    according to the size of the screen
 *****************************************************/
 
-@@media screen and (min-width: 450px){
-  .header {
-    order: -1;
-    width: 100;
-    }
+@media screen and (min-width: 500px){
+  .hero {
+    order: 0;
+    width: 60%;
+  }
   .weather {
-  order: 1;
-  width: 40%;
+    order: 1;
+    width: 40%;
   }
   .top-news {
     order: 2;
+    width: 100%;
+  }
+  .scores {
+    order: 3;
+    width: 100%;
+  }
+  .recent-news {
+    order: 4;
     width: 100%;
   }
 }
