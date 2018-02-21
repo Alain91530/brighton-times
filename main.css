@@ -64,6 +64,12 @@ ul {
  *
  */
 
+@media screen and (max-width: 499px){
+  .hero {
+    width: 100%;
+  }
+}
+
 /****************************************************
    These points will change the order of section
    according to the size of the screen
@@ -193,7 +199,7 @@ main {
  */
 
 .hero {
-  width: 100%;
+  /*width: 100%;*/
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
