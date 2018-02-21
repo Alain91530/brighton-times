@@ -1,4 +1,4 @@
-body, 
+body,
 html {
   margin: 0;
   padding: 0;
@@ -17,14 +17,14 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header,
-nav, 
-footer, 
-section, 
-article, 
+nav,
+footer,
+section,
+article,
 div {
   box-sizing: border-box;
 }
@@ -39,7 +39,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -48,7 +48,41 @@ ul {
   color: #333;
   text-decoration: none;
 }
+/*
+ *
+ * Setting up the ontainer to mostly-fluid
+ *
+ */
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*
+ *
+ * Breakpoints
+ *
+ */
+
+/****************************************************
+   These points will change the order of section
+   according to the size of the screen
+*****************************************************/
+
+@@media screen and (min-width: 450px){
+  .header {
+    order: -1;
+    width: 100;
+    }
+  .weather {
+  order: 1;
+  width: 40%;
+  }
+  .top-news {
+    order: 2;
+    width: 100%;
+  }
+}
 
 /*
  *
@@ -232,7 +266,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
