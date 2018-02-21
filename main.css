@@ -74,7 +74,7 @@ ul {
    for small screens
 *****************************************************/
 
-@media screen and (max-width: 499px){
+@media screen and (max-width: 529px){
   .header__title {
     font-size: 2em;
   }
@@ -90,7 +90,7 @@ ul {
    This point set width and order of sections for
    medium size screens and height of the header
 *****************************************************/
-@media screen and (min-width: 500px){
+@media screen and (min-width: 530px){
   .header__logo {
     height: 72px;
   }
