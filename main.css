@@ -64,17 +64,26 @@ ul {
  *
  */
 
-@media screen and (max-width: 499px){
-  .hero {
-    width: 100%;
-  }
-}
-
 /****************************************************
-   These points will change the order of section
+   These points will change the order of sections
    according to the size of the screen
 *****************************************************/
 
+/****************************************************
+   This point set the width of hero backgound image
+   for small screens
+*****************************************************/
+
+@media screen and (max-width: 499px){
+ .hero {
+   width: 100%;
+ }
+}
+
+/****************************************************
+   This point set width and order of sections for
+   medium size screens
+*****************************************************/
 @media screen and (min-width: 500px){
   .hero {
     order: 0;
@@ -91,6 +100,38 @@ ul {
   .scores {
     order: 3;
     width: 100%;
+  }
+  .recent-news {
+    order: 4;
+    width: 100%;
+  }
+}
+
+/****************************************************
+   This point set width and order of sections for
+   large size screens and add margins if it's cover
+   900px
+*****************************************************/
+@media screen and (min-width: 900px){
+  .content {
+    max-width: 900px;
+    margin: auto;
+  }
+  .hero {
+    order: 0;
+    width: 50%;
+  }
+  .weather {
+    order: 3;
+    width: 40%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+  }
+  .scores {
+    order: 2;
+    width: 60%;
   }
   .recent-news {
     order: 4;
